@@ -4,15 +4,32 @@ body {
   min-height: 100vh;
 }
 
+.response {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.panoramica {
+  margin: 15px auto 15px;
+  width: 800px;
+  border-radius: 1%;
+}
+
 .brand-wrapper {
   margin-bottom: 19px;
 }
 .brand-wrapper .logo {
-  /* height: 37px; */
   width: 100px;
   position: relative;
-  left: 100px;
   bottom: 20px;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.formulario {
+  margin: 0 auto 0;
 }
 
 .login-card {
@@ -34,16 +51,15 @@ body {
   font-family: "Exo 2", sans-serif;
   font-weight: 700;
   font-size: 2rem;
+  /* color: #000; */
+  color: #494949;
+  text-shadow: rgba(0, 0, 0, 0.5);
 }
 
 .login-card .card-body {
   padding: 85px 60px 60px;
 }
-@media (max-width: 422px) {
-  .login-card .card-body {
-    padding: 35px 24px;
-  }
-}
+
 .login-card-description {
   font-size: 25px;
   color: #000;
@@ -100,17 +116,58 @@ body {
 .login-card-footer-text {
   text-align: center;
   font-size: 16px;
-  color: #0d2366;
-  margin-bottom: 60px;
+  color: #919aa3;
+  margin: 10px 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .panoramica {
+    width: 500px;
+  }
+  .dehesa {
+    font-size: 1.8rem;
+  }
+  .card-title {
+    font-size: 2.75rem;
+  }
+  .response {
+    font-size: 1.5rem;
+  }
   .login-card-footer-text {
-    margin-bottom: 24px;
+    margin: 5px 0;
+    font-size: 18px;
   }
 }
+
+@media (max-width: 422px) {
+  .login-card .card-body {
+    padding: 35px 24px;
+  }
+  .logo {
+    position: static;
+  }
+  .panoramica {
+    width: 300px;
+  }
+  .dehesa {
+    font-size: 1.5rem;
+  }
+  .card-title {
+    font-size: 2rem;
+  }
+  .response {
+    font-size: 1.1rem;
+  }
+  .login-card-footer-text {
+    margin: 2px 0;
+    font-size: 12px;
+  }
+}
+
 .login-card-footer-nav a {
   font-size: 14px;
   color: #919aa3;
 }
+
+
 
 /*# sourceMappingURL=login.css.map */

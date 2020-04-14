@@ -8,13 +8,13 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
 // app.use(express.static("public"));
-app.use(express.static("template"));
+app.use(express.static("web"));
 
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req, res)=> {
   // res.sendFile(__dirname+"/signup.html");
-  res.sendFile(__dirname+"/template/index.html");
+  res.sendFile(__dirname+"/web/index.html");
 });
 
 app.post("/", (req, res)=> {
@@ -51,10 +51,10 @@ app.post("/", (req, res)=> {
 
     if(response.statusCode === 200) {
       
-        res.sendFile(__dirname+"/success.html");     
+        res.sendFile(__dirname+"/web/success.html");     
       
     } else {
-        res.sendFile(__dirname+"/failure.html");     
+        res.sendFile(__dirname+"/web/failure.html");     
     }
 
     response.on("data", (data) => {
