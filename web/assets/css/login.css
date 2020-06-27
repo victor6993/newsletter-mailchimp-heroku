@@ -4,12 +4,6 @@ body {
   min-height: 100vh;
 }
 
-.noappearance {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .response {
   font-weight: 500;
   font-size: 1.8rem;
